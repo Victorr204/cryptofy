@@ -1,0 +1,50 @@
+.crypto-section {
+    padding: 2rem;
+    text-align: center;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .crypto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+  
+    .crypto-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+      }
+  
+      .crypto-logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+        margin: auto;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #007bff;
+      }
+      p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        color: #555;
+      }
+    }
+  }
+  
