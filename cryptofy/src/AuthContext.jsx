@@ -6,14 +6,15 @@ const AuthContext = createContext();
 
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null);
 
   // Monitor authentication state
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user); // Update user state when auth state changes
     });
-    return () => unsubscribe();
+
+    return unsubscribe;
   }, []);
 
   // Sign up function
@@ -27,12 +28,12 @@ export const AuthProvider = ({ children }) => {
   };
 
   // Logout function
-  const logout = () => {
+   const logout = () => {
     return signOut(auth);
   };
 
   return (
-    <AuthContext.Provider value={{ user, signup, login, logout }}>
+    <AuthContext.Provider value={{ currentUser, signup, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

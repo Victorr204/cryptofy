@@ -1,0 +1,14 @@
+.get{
+    background-image: url(/src/img/background.webp);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: contain; 
+    }
+  }

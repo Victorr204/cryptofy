@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="app-footer  dark:bg-slate-900 dark:text-white p-4 bg-slate-200">
       <hr />
       <div className="footer-content">
-        <p>© 2025 Crypto Platform. All rights reserved.</p>
+        <p>© 2025 Zyptox. All rights reserved.</p>
         <p>Reach us on:</p>
         <ul className="social-links">
           <li>

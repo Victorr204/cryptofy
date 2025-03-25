@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles/buyandsell.css"
+import Header from "./Header";
 
 const SellSection = () => {
   const [cryptos, setCryptos] = useState([]);
@@ -47,6 +48,9 @@ const SellSection = () => {
   };
 
   return (
+    <>
+    <Header/>
+    <div className="sog content-center">
     <div className="sell-section  bg-gray-100 dark:bg-gray-900 shadow-md dark:shadow-md dark:shadow-yellow-50  text-gray-900 dark:text-white">
       <h2>Sell Cryptocurrency</h2>
       <p>Select the cryptocurrency you want to sell:</p>
@@ -127,6 +131,9 @@ const SellSection = () => {
         </div>
       )}
     </div>
+    </div>
+   
+    </>
   );
 };
 

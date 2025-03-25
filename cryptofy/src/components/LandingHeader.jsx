@@ -14,10 +14,11 @@ const toggleMenu = () => {
 
 return (
   <>
-   <nav className=" dark:bg-slate-900 dark:text-white p-4 bg-slate-200 sticky top-0">
+   <nav className=" dark:bg-slate-900 dark:text-white p-4 bg-slate-200 ">
     <div className="container mx-auto flex justify-between items-center">
       {/*logo for small screen*/}
       <h1 className='head lg:hidden md:hidden'><a href="#"><img src="#" alt="cryptofy" /></a></h1>
+
 
       
       {/* Hamburger menu */}

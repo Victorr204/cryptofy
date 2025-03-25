@@ -7,6 +7,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import LandingPage from './components/LandingPage';
 import MainPage from "./components/MainPage";
+import GetStarted from "./components/GetStarted";
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
 
             <Route  path="/buy" element={<BuySection />} />
             <Route path="/sell" element={<SellSection />} />
+            <Route path="/get-started" element={<GetStarted />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             
